@@ -7,7 +7,7 @@ Write-Host ""
 
 
 
-$folderPath = "C:\"
+$folderPath = "D:\"
 $searchTerms = @("password", "key", "secret", "ssh", "AWS")
 
 Get-ChildItem -Path $folderPath -Recurse -ErrorAction SilentlyContinue | ForEach-Object {
@@ -21,3 +21,6 @@ Get-ChildItem -Path $folderPath -Recurse -ErrorAction SilentlyContinue | ForEach
         }
     }
 }
+
+Write-Host ""
+Write-Host ""
